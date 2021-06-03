@@ -1,0 +1,181 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+html,body{
+
+height: 100%;
+width: 100%;
+background: rgb(253, 200, 86);
+
+}
+.container{
+
+ width: 100%;
+ height: 100%;
+ background: rgb(253, 200, 86);
+
+
+}
+
+.menu ul{
+   display: inline-flex;
+   Margin: 50px;
+
+}
+.menu ul li{
+
+    list-style: none;
+    margin: 0 20px;
+    color:#ce9212ef
+    
+
+
+}
+.logo img{
+
+
+width: 30px;
+margin-top: -7px;
+margin-right: 48px;
+
+}
+.active{
+ color: brown !important;
+ cursor: pointer;
+
+
+}
+
+
+.signup-btn{
+
+
+top: 40px;
+right: 80px;
+position: absolute;
+text-decoration: none;
+color: brown;
+border: 2px solid transparent;
+border-radius: 20px;
+background-image: linear-gradient(#ffae18,#fff018), radial-gradient(circle at top left, #f39913, #ffa928);
+background-origin: border-box;
+background-clip: content-box, border-box;
+
+
+}
+
+
+.signup-btn span{
+
+  display: block;
+  padding: 8px 22px;
+
+}
+
+
+.banner{
+
+ width: 80%;
+ height: 70%;
+ top: 25%;
+ left: 130px;
+ position: absolute;
+ color: #af8206;
+}
+
+
+.app-text{
+
+width: 50%;
+float: left;
+
+
+}
+
+.app-text h1{
+
+   font-size: 43px;
+   width: 640px;
+   position: relative;
+   margin-left: 40px;
+
+}
+
+
+
+.app-text p{
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #af8206;
+    
+}
+
+
+
+.app-picture{
+
+    width: 50%;
+    float: right;
+
+}
+
+
+.app-picture img{
+
+  width: 80%;  
+  margin-top: -80px;
+  padding-left: 50px;
+  margin-left: 180px;
+
+}
+
+
+.app-text img{
+    margin-left: 40px;
+
+
+
+
+}
+
+.quick-link{
+left: 0;
+bottom: 0;
+position: absolute;
+background: linear-gradient(to right, #fabe3eef,#f3b43e)
+
+
+
+
+
+}
+
+.quick-link ul{
+
+display: inline-flex;
+margin: 35px 30px;
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.quick-link li{
+
+  list-style: none;
+  margin: 0 50px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+
+
+
