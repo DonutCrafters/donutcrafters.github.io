@@ -1,220 +1,164 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+body {
 
-*{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-body{
-  background: #fec107;
-  padding: 0 10px;
-}
-.wrapper{
-  max-width: 500px;
-  width: 100%;
-  background: #fff;
-  margin: 20px auto;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
-  padding: 30px;
-}
-
-.wrapper .title{
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  color: #fec107;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.wrapper .form{
-  width: 100%;
-}
-
-.wrapper .form .inputfield{
-  margin-bottom: 15px;
+  
+  margin-top: 50px;
+  
+  font-family: sans-serif;
+  
+  }
+  
+   
+  
+  header {
+  
   display: flex;
-  align-items: center;
-}
-
-.wrapper .form .inputfield label{
-   width: 200px;
-   color: #757575;
-   margin-right: 10px;
-  font-size: 14px;
-}
-
-.wrapper .form .inputfield .input,
-.wrapper .form .inputfield .textarea{
-  width: 100%;
-  outline: none;
-  border: 1px solid #d5dbd9;
-  font-size: 15px;
-  padding: 8px 10px;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-.wrapper .form .inputfield .textarea{
-  width: 100%;
-  height: 125px;
-  resize: none;
-}
-
-.wrapper .form .inputfield .custom_select{
-  position: relative;
-  width: 100%;
-  height: 37px;
-}
-
-.wrapper .form .inputfield .custom_select:before{
-  content: "";
-  position: absolute;
-  top: 12px;
-  right: 10px;
-  border: 8px solid;
-  border-color: #d5dbd9 transparent transparent transparent;
-  pointer-events: none;
-}
-
-.wrapper .form .inputfield .custom_select select{
-  -webkit-appearance: none;
-  -moz-appearance:   none;
-  appearance:        none;
-  outline: none;
-  width: 100%;
-  height: 100%;
-  border: 0px;
-  padding: 8px 10px;
-  font-size: 15px;
-  border: 1px solid #d5dbd9;
-  border-radius: 3px;
-}
-
-
-.wrapper .form .inputfield .input:focus,
-.wrapper .form .inputfield .textarea:focus,
-.wrapper .form .inputfield .custom_select select:focus{
-  border: 1px solid #fec107;
-}
-
-.wrapper .form .inputfield p{
-   font-size: 14px;
-   color: #757575;
-}
-.wrapper .form .inputfield .check{
-  width: 15px;
-  height: 15px;
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-.wrapper .form .inputfield .check input[type="checkbox"]{
-  position: absolute;
+  
+  position: fixed;
+  
   top: 0;
+  
   left: 0;
-  opacity: 0;
-}
-.wrapper .form .inputfield .check .checkmark{
-  width: 15px;
-  height: 15px;
-  border: 1px solid #fec107;
-  display: block;
-  position: relative;
-}
-.wrapper .form .inputfield .check .checkmark:before{
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 2px;
-  width: 5px;
-  height: 2px;
-  border: 2px solid;
-  border-color: transparent transparent #fff #fff;
-  transform: rotate(-45deg);
-  display: none;
-}
-.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
-  background: #fec107;
-}
-
-.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
-  display: block;
-}
-
-.wrapper .form .inputfield .btn{
-  width: 100%;
-   padding: 8px 10px;
-  font-size: 15px; 
-  border: 0px;
-  background:  #fec107;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 3px;
-  outline: none;
-}
-
-.wrapper .form .inputfield .btn:hover{
-  background: #ffd658;
-}
-
-.wrapper .form .inputfield:last-child{
-  margin-bottom: 0;
-}
-
-@media (max-width:420px) {
-  .wrapper .form .inputfield{
-    flex-direction: column;
-    align-items: flex-start;
+  
+  right: 0;
+  
+  height: 50px;
+  
+  line-height: 50px;
+  
+  background-color: #eee;
+  
   }
-  .wrapper .form .inputfield label{
-    margin-bottom: 5px;
+  
+   
+  
+  header * {
+  
+  display: inline;
+  
+  height: 50px;
+  
   }
-  .wrapper .form .inputfield.terms{
-    flex-direction: row;
+  
+   
+  
+  headerul {
+  
+  padding: 0;
+  
   }
-}
-
-
-.wrapper .input_field{
-  margin-bottom: 10px;
-}
-
-.wrapper .input_field input[type="text"],
-.wrapper textarea{
-  border: 1px solid #e0e0e0;
-  width: 100%;
-  padding: 10px;
-}
-
-.wrapper textarea{
-  resize: none;
-  height: 80px;
-}
-
-.wrapper .btn input[type="submit"]{
-  border: 0px;
-  margin-top: 15px;
-  padding: 10px;
+  
+   
+  
+  header li {
+  
+  margin-left: 20px;
+  
+  }
+  
+   
+  
+  section {
+  
+  height: 100vh;
+  
+  border: 1px solid black;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
   text-align: center;
-  width: 100%;
-  background: #fece0c;
-  color: #332902;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-#error_message{
-  margin-bottom: 20px;
-  background: #fe8b8e;
-  padding: 0px;
+  
+   
+  
+  background-size: cover; /* Add this line */
+  
+  background-position: center center; /* Add this line */
+  
+  background-repeat: no-repeat; /* Add this line */
+  
+  background-attachment: fixed; /* Add this line */
+  
+  }
+  
+   
+  
+  #hero .profile-img {
+  
+  width: 300px;
+  
+  border-radius: 50%;
+  
+  }
+  
+   
+  
+  footer {
+  
   text-align: center;
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
-
+  
+  padding: 50px;
+  
+  }
+  
+   
+  
+  #hero h1 {
+  
+  font-size: 3em;
+  
+  }
+  
+   
+  
+  section h2 {
+  
+  font-size: 2.5em;
+  
+  }
+  
+   
+  
+  section h3 {
+  
+  font-size: 1.5em;
+  
+  }
+  
+   
+  
+  header a {
+  
+  text-decoration: none;
+  
+  color: black;
+  
+  }
+  
+  /* Add everything below here */
+  
+  #hero {
+  
+      background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(‘https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.0-9/60903720_10219096913924536_7793117871105638400_n.jpg?_nc_cat=104&_nc_ht=scontent.fcgk18-2.fna&oh=0699be50b4ae038bf8f3da4b5bbced8f&oe=5D58596E‘);
+  
+  }
+  
+   
+  
+  #about {
+  
+      background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(‘https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.0-9/60232304_10219096916964612_1350888178050924544_n.jpg?_nc_cat=100&_nc_ht=scontent.fcgk18-2.fna&oh=72784f19fd9cf8cf9ca99d7dfc53735b&oe=5D54C31C‘);
+  
+  }
+  
+   
+  
+  #contact {
+  
+      background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(‘https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/60586842_10219096915844584_3123709442135162880_n.jpg?_nc_cat=107&_nc_ht=scontent-sin6-1.xx&oh=870f6e76c4eae89bba33c7ab76d37127&oe=5D554E78‘);
+  
+  }
 
